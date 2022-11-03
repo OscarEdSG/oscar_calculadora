@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgba(83, 71, 71, 0.5);
+    background-image: url('../img/fondo1.jpg');
+}
+
+body div.calculadora{
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    width: 240px;
+    margin: 0 auto;
+    background: rgb(20, 63, 143);
+    border-radius: 10PX;
+    padding: 0 0 20px 0;
+}
+
+input.display{
+    text-align:right
+}
+
+div.borrar button.borrar{
+    height: 40px;
+    width: 85px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    background-color: rgb(0, 255, 170);
+    font-size: 20px;
+}
+
+div input[type=button]{
+    width: 40px;
+    height: 40px;
+    margin: 3px 0;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+div input[type=text]{
+    height: 40px;
+    width: 200px;
+    padding: 12px 20px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    border: 3px solid rgb(83, 57, 57);
+    font-size: 20px;
+}
+
+div input.igual{
+    height: 40px;
+    width: 85px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    font-size: 20px;
+}
+
+div.resultado button.borrar{
+    height: 40px;
+    width: 85px;
+    margin-top: 2px;
+    margin-bottom: 8px;
+    border-radius: 10px;
+    background-color: red;
+    font-size: 20px;
+}

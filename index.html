@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="Estilos/estilo.css">
+    <link rel="icon" href="img/flaticonlogo1.png">
+</head>
+<body>
+    <div class="calculadora">
+        <form name="calculadora" id="calculadora">
+            <input class="display" type="text" name="display" id="display">
+                <div class="borrar">
+                    <button class="borrar" type="button" id="borrar" value=" " onclick="borrardisplay(document.getElementById('borrar').value)">C</button>
+                    <input type="button" id="porcentaje" value="%" onclick="valor(document.getElementById('porcentaje').value)">
+                    <input type="button" id="divicion" value="/" onclick="valor(document.getElementById('divicion').value)">
+                </div>
+
+                <div>
+                    <input type="button" id="siete" value="7" onclick="valor(document.getElementById('siete').value)">
+                    <input type="button" id="ocho" value="8" onclick="valor(document.getElementById('ocho').value)">
+                    <input type="button" id="nueve" value="9" onclick="valor(document.getElementById('nueve').value)">
+                    <input type="button" id="multiplicacion" value="*" onclick="valor(document.getElementById('multiplicacion').value)">
+                </div>
+
+                <div>
+                    <input type="button" id="cuatro" value="4" onclick="valor(document.getElementById('cuatro').value)">
+                    <input type="button" id="cinco" value="5" onclick="valor(document.getElementById('cinco').value)">
+                    <input type="button" id="seis" value="6" onclick="valor(document.getElementById('seis').value)">
+                    <input type="button" id="resta" value="-" onclick="valor(document.getElementById('resta').value)">
+                </div>
+
+                <div>
+                    <input type="button" id="uno" value="1" onclick="valor(document.getElementById('uno').value)">
+                    <input type="button" id="dos" value="2" onclick="valor(document.getElementById('dos').value)">
+                    <input type="button" id="tres" value="3" onclick="valor(document.getElementById('tres').value)">
+                    <input type="button" id="suma" value="+" onclick="valor(document.getElementById('suma').value)">
+                </div>
+
+                <div>
+                    <input type="button" id="cero" value="0" onclick="valor(document.getElementById('cero').value)">
+                    <input type="button" id="punto" value="." onclick="valor(document.getElementById('punto').value)">
+                    <input class="igual" type="button" id="igual" value="=" onclick="calcular_resul()">
+                    
+                </div>
+
+        </form>
+        
+    </div>
+    <script src="funciones.js"></script>
+</body>
+</html>
